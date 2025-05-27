@@ -6,6 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: github.com?owner=vipin-ng&repo=my-workshop-app
     backstage.io/kubernetes-id: my-test
+    backstage.io/techdocs-ref: dir:.
   labels:
     team: naruto
 spec:
