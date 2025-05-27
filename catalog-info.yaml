@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-test
+  description: Sample application for ArgoCD deployment
+  annotations:
+    github.com/project-slug: github.com?owner=vipin-ng&repo=my-workshop-app
+    backstage.io/kubernetes-id: my-test
+  labels:
+    team: naruto
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
+  system: examples

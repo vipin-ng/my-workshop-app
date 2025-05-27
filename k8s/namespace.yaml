@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: naruto
+  labels:
+    name: naruto
+    team: naruto

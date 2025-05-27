@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-test
+  namespace: naruto
+  labels:
+    app: my-test
+    team: naruto
+    custom-label: my-awesome-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-test
+  template:
+    metadata:
+      labels:
+        app: my-test
+        custom-label: my-awesome-app
+    spec:
+      containers:
+      - name: my-test
+        image: nginx:latest
+        ports:
+        - containerPort: 80
